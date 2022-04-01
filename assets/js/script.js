@@ -80,12 +80,12 @@ function place_square() {
     }
 
     function get_value(val) {
-        cx = val.target.dataset.cx;
-        cy = val.target.dataset.cy;
+        cy = val.target.dataset.cx;
+        cx = val.target.dataset.cy;
         link = 'https://www.reddit.com/r/place/?cx=' + cx + '&cy=' + cy + '&px=146';
         color = val.target.dataset.color;
         color_name = val.target.dataset.color_name;
-        kordinant.innerHTML = '( ' + cy + ' , ' + cx + ' )';
+        kordinant.innerHTML = '( ' + cx + ' , ' + cy + ' )';
         link_alan.innerHTML = 'r/place link: <a target="_blank" href="' + link + '">' + link + '</a>';
         color_alan.setAttribute("class", "");
         color_alan.classList.add(color);
