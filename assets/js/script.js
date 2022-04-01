@@ -49,8 +49,8 @@ function place_square() {
         square.classList.add("square");
         square.classList.add(renk[valuer]);
         square.dataset.color = renk[valuer];
-        square.dataset.cx = rplace.baslangic_x + row_number;
-        square.dataset.cy = rplace.baslangic_y + (col_number + 1);
+        square.dataset.cx = rplace.baslangic_y + row_number;
+        square.dataset.cy = rplace.baslangic_x + (col_number + 1);
 
         var rplace_renk_no = "renk";
         switch (valuer) {
@@ -85,7 +85,7 @@ function place_square() {
         link = 'https://www.reddit.com/r/place/?cx=' + cx + '&cy=' + cy + '&px=146';
         color = val.target.dataset.color;
         color_name = val.target.dataset.color_name;
-        kordinant.innerHTML = '( ' + cx + ' , ' + cy + ' )';
+        kordinant.innerHTML = '( ' + cy + ' , ' + cx + ' )';
         link_alan.innerHTML = 'r/place link: <a target="_blank" href="' + link + '">' + link + '</a>';
         color_alan.setAttribute("class", "");
         color_alan.classList.add(color);
