@@ -1,0 +1,116 @@
+:root {
+    --square_width: 7px;
+    --square_height: 7px;
+
+    --square_color_1: #FF4500;
+    --square_color_2: #000000;
+    --square_color_3: #898d90;
+    --square_color_4: #d4d7d9;
+    --square_color_5: #ffffff;
+    --square_color_6: #FFA800;
+    --square_color_7: #FFD635;
+    --square_color_8: #00A368;
+    --square_color_9: #7EED56;
+    --square_color_10: #2450A4;
+    --square_color_11: #3690EA;
+    --square_color_12: #51E9F4;
+    --square_color_13: #811E9F;
+    --square_color_14: #B44AC0;
+    --square_color_15: #FF99AA;
+    --square_color_16: #9C6926;
+}
+
+
+#place_canvas {
+    width: calc(var(--square_width) * 133);
+    height: calc(var(--square_height) * 81);
+    background-color: #fff;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.canvas_row {
+    display: flex;
+    height: var(--square_height);
+}
+
+.square {
+    cursor: pointer;
+    border-right: .01px solid #00000020;
+    border-bottom: .01px solid #00000020;
+    margin: 0;
+    width: var(--square_width);
+    height: var(--square_height);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.square:hover {
+    opacity: 0.7;
+}
+
+.square_color_1 {
+    background-color: var(--square_color_1);
+}
+
+.square_color_2 {
+    background-color: var(--square_color_2);
+}
+
+.square_color_3 {
+    background-color: var(--square_color_3);
+}
+
+.square_color_4 {
+    background-color: var(--square_color_4);
+}
+
+.square_color_5 {
+    background-color: var(--square_color_5);
+}
+
+.square_color_6 {
+    background-color: var(--square_color_6);
+}
+
+.square_color_7 {
+    background-color: var(--square_color_7);
+}
+
+.square_color_8 {
+    background-color: var(--square_color_8);
+}
+
+.square_color_9 {
+    background-color: var(--square_color_9);
+}
+
+.square_color_10 {
+    background-color: var(--square_color_10);
+}
+
+.square_color_11 {
+    background-color: var(--square_color_11);
+}
+
+.square_color_12 {
+    background-color: var(--square_color_12);
+}
+
+.square_color_13 {
+    background-color: var(--square_color_13);
+}
+
+.square_color_14 {
+    background-color: var(--square_color_14);
+}
+
+.square_color_15 {
+    background-color: var(--square_color_15);
+}
+
+.square_color_16 {
+    background-color: var(--square_color_16);
+}
